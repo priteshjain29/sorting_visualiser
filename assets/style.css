@@ -2,8 +2,44 @@
     outline: none;
 }
 
+
+.navbar {
+    transition: all 0.4s;
+    background-color: #DAFFFB;
+}
+
+.navbar .nav-link {
+    color: #00A9FF;
+    text-align: center;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #00A9FF;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #00A9FF;
+    font-size: 50px;
+    text-align:center;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #DAFFFB;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #00A9FF;
+    }
+}
+
+
 body {
-    background-color: black;
+    background-color: #DAFFFB;
     font-family: "Catamaran", sans-serif;
     color: #ccc;
 }
@@ -18,7 +54,7 @@ body {
 
 #array-container {
     height: 350px;
-    margin-top: 3em;
+    margin-top: 10em;
     display: flex;
     flex-direction: column-reverse;
     position: relative;
@@ -56,23 +92,23 @@ body {
 }
 
 .algo-btn, #sort, #randomize {
-    background-color: #222;
+    background-color: black;
     margin: 5px 2px;
     padding: 5px 20px;
-    color: #ccc;
+    color: white;
     font-size: 1.2em;
     border: none;
     border-radius: 50px;
 }
 
 .algo-btn:hover, .algo-btn-active {
-    background-color: #ccc;
-    color: #222;
+    background-color: red;
+    color: white;
 }
 
 #sort {
     float: right;
-    background-color: mediumspringgreen;
+    background-color: #82CD47;
     color: black;
 }
 
@@ -95,8 +131,8 @@ body {
 }
 
 #randomize {
-    background-color: crimson;
-    color: #ddd;
+    background-color: #F8DE22;
+    color: black;
 }
 
 #sliders {
@@ -113,6 +149,7 @@ body {
     margin: 0;
     text-align: center;
     font-size: 1.2em;
+    color: black;
 }
 
 .slider {
